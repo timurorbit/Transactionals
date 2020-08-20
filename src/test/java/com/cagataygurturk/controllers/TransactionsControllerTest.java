@@ -1,7 +1,7 @@
 package com.cagataygurturk.controllers;
 
 
-import com.cagataygurturk.DemoApplication;
+import com.timplant.DemoApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.IntegrationTest;

@@ -50,6 +50,41 @@
             <scope>test</scope>
         </dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.apache.johnzon/johnzon-mapper -->
+		<dependency>
+			<groupId>org.apache.johnzon</groupId>
+			<artifactId>johnzon-mapper</artifactId>
+			<version>1.2.8</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/javax.json/javax.json-api -->
+		<dependency>
+			<groupId>javax.json</groupId>
+			<artifactId>javax.json-api</artifactId>
+			<version>1.1.4</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.2.14</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/javax.cache/cache-api -->
+		<dependency>
+			<groupId>javax.cache</groupId>
+			<artifactId>cache-api</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.jsr107.ri/cache-annotations-ri-spring -->
+		<dependency>
+			<groupId>org.jsr107.ri</groupId>
+			<artifactId>cache-annotations-ri-spring</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+
 	</dependencies>
 	
 	<build>

@@ -1,7 +1,10 @@
 package com.cagataygurturk.services.transaction;
 
-import com.cagataygurturk.models.Transaction;
-import com.cagataygurturk.services.transaction.repository.TransactionRepository;
+import com.timplant.models.Transaction;
+import com.timplant.services.transaction.TransactionNotFoundException;
+import com.timplant.services.transaction.TransactionService;
+import com.timplant.services.transaction.TransactionServiceImpl;
+import com.timplant.services.transaction.repository.TransactionRepository;
 import org.junit.Test;
 
 import static org.easymock.EasyMock.*;
@@ -38,13 +41,13 @@ public class TransactionServiceImplTest {
     @Test(expected = TransactionNotFoundException.class)
     public void testGetNotFoundTransaction() throws Exception {
         TransactionService transactionService = new TransactionServiceImpl(getMockRepository());
-        transactionService.getTransactionById(12);
+        transactionService.getTransactionById(12L);
     }
 
     @Test
     public void testGetTransactionById() throws Exception {
         TransactionService transactionService = new TransactionServiceImpl(getMockRepository());
-        Transaction transaction = transactionService.getTransactionById(1);
+        Transaction transaction = transactionService.getTransactionById(1L);
         assertNotNull(transaction);
         assertEquals(1, transaction.getId());
     }

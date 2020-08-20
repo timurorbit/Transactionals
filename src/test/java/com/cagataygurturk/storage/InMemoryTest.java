@@ -1,6 +1,7 @@
 package com.cagataygurturk.storage;
 
-import com.cagataygurturk.models.Transaction;
+import com.timplant.storage.InMemory;
+import com.timplant.storage.Storable;
 import org.junit.Test;
 
 import java.util.Map;

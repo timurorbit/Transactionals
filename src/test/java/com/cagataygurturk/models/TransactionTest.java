@@ -1,5 +1,6 @@
 package com.cagataygurturk.models;
 
+import com.timplant.models.Transaction;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

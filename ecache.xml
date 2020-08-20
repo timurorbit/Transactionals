@@ -1,0 +1,5 @@
+<cache-template name="example">
+    <key-type>java.util.String</key-type>
+    <value-type>java.util.List</value-type>
+    <heap unit="entries">200</heap>
+</cache-template>
