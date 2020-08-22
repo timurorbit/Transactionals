@@ -26,9 +26,11 @@ public class TransactionsController {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("transactions/{id}")
-    public Transaction getTransactionById(@PathParam("id") Long id) throws Exception {
+    public Response getTransactionById(@PathParam("id") Long id) throws Exception {
         try {
-            return transactionService.getTransactionById(id);
+            return Response.status(200).entity(
+                    transactionService.getTransactionById(id)
+            ).build();
         } catch (TransactionNotFoundException e) {
             throw new NotFoundException(e.getMessage());
         }

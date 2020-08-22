@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Configuration;
 public class JerseyConfig extends ResourceConfig {
     public JerseyConfig() {
 
-        // Controllers
         register(TransactionsController.class);
     }
 }
