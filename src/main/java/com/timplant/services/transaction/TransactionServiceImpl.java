@@ -20,22 +20,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 @Component
-@CacheDefaults
 public class TransactionServiceImpl implements TransactionService {
-
-    CacheManager cacheManager;
-
-    Cache<Long, Transaction> cache;
-
-    private static final String EHCACHE_CONFIG = "ehcache.xml";
-
-    @PostConstruct
-    private void init(){
-//        cacheManager = Caching.getCachingProvider().getCacheManager();
-//        Configuration<Long, Transaction> cacheConfig = new MutableConfiguration<Long, Transaction>().setTypes(Long.class, Transaction.class);
-//        cache = cacheManager.createCache("roles", cacheConfig);
-//        cache.put(777L, new Transaction(24, "this is type"));
-    }
 
     protected TransactionRepository repository;
 
